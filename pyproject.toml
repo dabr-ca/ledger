@@ -1,0 +1,13 @@
+[project]
+name = "ledger"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beanaws",
+    "fava>=1.30.12",
+]
+
+[tool.uv.sources]
+beanaws = { git = "https://github.com/wzyboy/beanaws" }
