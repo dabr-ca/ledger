@@ -12,3 +12,6 @@ wheels/
 # Invoices
 invoices
 invoices/
+
+# Generated GitHub Pages output
+public/
