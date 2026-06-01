@@ -6,8 +6,6 @@ on:
       - master
     paths:
       - dabr-ca.bean
-      - pyproject.toml
-      - uv.lock
       - scripts/**
       - .github/workflows/pages.yml
   workflow_dispatch:
@@ -32,13 +30,10 @@ jobs:
         uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
-          cache-dependency-glob: uv.lock
-
-      - name: Install dependencies
-        run: uv sync --locked
+          cache-dependency-glob: scripts/generate_pages.py
 
       - name: Generate static dashboard
-        run: uv run python scripts/generate_pages.py --input dabr-ca.bean --output public
+        run: uv run --script scripts/generate_pages.py --input dabr-ca.bean --output public
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

@@ -1,3 +1,9 @@
+# /// script
+# requires-python = ">=3.13"
+# dependencies = [
+#     "beancount==3.2.0",
+# ]
+# ///
 import argparse
 import math
 import shutil
