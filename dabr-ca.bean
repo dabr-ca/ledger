@@ -15,6 +15,8 @@ option "operating_currency" "USD"
 
 2022-12-03 open Expenses:AWS:Registrar
 
+2022-12-03 open Expenses:AWS:Rounding
+
 2022-12-03 open Expenses:AWS:Route53
 
 2022-12-03 open Expenses:AWS:S3
@@ -1242,6 +1244,22 @@ option "operating_currency" "USD"
   amortization_month: "7"
   Expenses:AWS:EC2     22.28 USD
   Assets:AWS:Prepaid  -22.28 USD
+
+2026-07-01 * "AWS" "AWS Invoice"
+  document: "CAIN26-1596514"
+  billing_period_start: "2026-06-01"
+  billing_period_end: "2026-06-30"
+  Expenses:AWS:ELB             25.41 USD
+  Expenses:AWS:EC2             10.00 USD
+  Expenses:AWS:Route53          0.61 USD
+  Expenses:AWS:VPC             18.74 USD
+  Expenses:AWS:RDS             20.50 USD
+  Expenses:AWS:S3               5.22 USD
+  Expenses:AWS:DataTransfer    26.24 USD
+  Expenses:AWS:Tax:BCPST        7.46 USD
+  Expenses:AWS:Tax:GST          5.33 USD
+  Expenses:AWS:Rounding        -0.19 USD
+  Liabilities:AWS            -119.32 USD
 
 2026-07-18 * "AWS" "AWS Amortization CAIN25-2977137"
   document: "CAIN25-2977137"
