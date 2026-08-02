@@ -1283,6 +1283,21 @@ option "operating_currency" "USD"
   Expenses:AWS:EC2     22.28 USD
   Assets:AWS:Prepaid  -22.28 USD
 
+2026-08-01 * "AWS" "AWS Invoice"
+  document: "CAIN26-1931495"
+  billing_period_start: "2026-07-01"
+  billing_period_end: "2026-07-31"
+  Expenses:AWS:ELB             19.28 USD
+  Expenses:AWS:EC2              9.45 USD
+  Expenses:AWS:Route53          0.62 USD
+  Expenses:AWS:VPC             18.72 USD
+  Expenses:AWS:RDS             20.32 USD
+  Expenses:AWS:S3               5.33 USD
+  Expenses:AWS:DataTransfer    19.41 USD
+  Expenses:AWS:Tax:BCPST        6.52 USD
+  Expenses:AWS:Tax:GST          4.66 USD
+  Liabilities:AWS            -104.31 USD
+
 2026-08-18 * "AWS" "AWS Amortization CAIN25-2977137"
   document: "CAIN25-2977137"
   billing_period_start: "2025-12-01"
